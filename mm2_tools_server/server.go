@@ -38,5 +38,5 @@ func LaunchServer(appName string, onlyPriceService bool) {
 	middleware := mfasthttp.NewMiddleware(limiter.New(store, rate, limiter.WithTrustForwardHeader(true)))
 	glg.Info("Middleware created")
 
-        glg.Fatal(fasthttp.ListenAndServeTLS(":"+fmt.Sprintf("%d", 1414), "/prices/cipig.crt", "/prices/cipig.key", middleware.Handle(router.Handler)))
+        glg.Fatal(fasthttp.ListenAndServeTLS(":"+fmt.Sprintf("%d", 1717), "/prices/cipig.crt", "/prices/cipig.key", middleware.Handle(router.Handler)))
 }
