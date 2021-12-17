@@ -25,7 +25,7 @@ func LaunchServer(appName string, onlyPriceService bool) {
 
 	gAppName = appName
 	router := InitRooter(onlyPriceService)
-	rate, err := limiter.NewRateFromFormatted("30-M")
+	rate, err := limiter.NewRateFromFormatted("300-M")
 	if err != nil {
 		glg.Fatalf("error on limiter: %v", err)
 		return
