@@ -97,7 +97,6 @@ func processMM2Json() {
 }
 
 func processVersionConfiguration() {
-	version := mm2http.GetLastDesktopVersion()
 	targetDir := helpers.GetWorkingDir() + "/mm2"
 	targetPath := targetDir + "/coins_config.json"
 	targetUrl := "https://raw.githubusercontent.com/KomodoPlatform/coins/master/utils/coins_config.json"
