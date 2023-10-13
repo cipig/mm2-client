@@ -12,7 +12,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
 	"github.com/kpango/glg"
 )
 
@@ -99,6 +98,7 @@ func processCoingecko() *[]CoingeckoAnswer {
 			return answer
 		}
 		page += 1
+		time.Sleep(10 * time.Second) 
 	}
 }
 

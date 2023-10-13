@@ -12,7 +12,6 @@ import (
 	"sort"
 	"sync"
 	"time"
-
 	"github.com/kpango/glg"
 )
 
@@ -95,6 +94,7 @@ func processLcw() *[]LcwAnswer {
 			bodyBytes, _ := ioutil.ReadAll(resp.Body)
 			glg.Errorf("Http status not OK: %s", bodyBytes)
 		}
+		time.Sleep(10 * time.Second)
 	}
 	if len(*answer) > 0 {
 		return answer
