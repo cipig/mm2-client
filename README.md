@@ -167,3 +167,5 @@ class MainActivity : AppCompatActivity() {
 # for android simulator devices please start the emulator and run then start your app
 adb forward tcp:1313 tcp:1313
 ```
+
+For prices only: go build -o /home/admin/mm2-client/prices_komodo_earth /home/admin/mm2-client/cmd/mm2_tools_server/mm2_tools_server.go

@@ -101,7 +101,7 @@ func StartCoingeckoService() {
 		} else {
 			glg.Error("Something went wrong when processing coingecko request")
 		}
-		time.Sleep(time.Second * 30)
+		time.Sleep(time.Second * 90)
 	}
 }
 
